@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Colour Memory</string>
+    <string name="valid_name_msg">Please enter valid name</string>
+    <string name="duplicate_name_msg">Name already used,   Enter different name</string>
+    <string name="second_player_name">2nd Player Name</string>
+    <string name="firat_player_name">1st Player Name</string>
+    <string name="wait_msg">Please Wait a moment</string>
+    <string name="gane_complete_msg">Game Completed..!!!!</string>
+    <string name="active_card_msg">Please select Active Card</string>
+    <string name="no_record_msg">No Player\'s Record Found</string>
+</resources>

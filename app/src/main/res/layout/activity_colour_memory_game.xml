@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    tools:context=".game.ui.ColourMemoryGameActivity">
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF00FF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#AAFFA1"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#AAFFA1"
+            android:gravity="center"
+            android:text="Score \n1st : 0\n2nd : 0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/high_score_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#AAFFA1"
+            android:gravity="center"
+            android:text="Rank \nBoard"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/game_board_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/play_game_again_button"
+        android:layout_below="@+id/logo_container"
+        android:weightSum="4"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/card_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour1" />
+
+            <ImageView
+                android:id="@+id/card_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour2" />
+
+            <ImageView
+                android:id="@+id/card_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour3" />
+
+            <ImageView
+                android:id="@+id/card_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/card_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour5" />
+
+            <ImageView
+                android:id="@+id/card_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour6" />
+
+            <ImageView
+                android:id="@+id/card_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour7" />
+
+            <ImageView
+                android:id="@+id/card_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour8" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/card_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour1" />
+
+            <ImageView
+                android:id="@+id/card_10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour2" />
+
+            <ImageView
+                android:id="@+id/card_11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour3" />
+
+            <ImageView
+                android:id="@+id/card_12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:id="@+id/card_13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour5" />
+
+            <ImageView
+                android:id="@+id/card_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour6" />
+
+            <ImageView
+                android:id="@+id/card_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour7" />
+
+            <ImageView
+                android:id="@+id/card_16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/colour8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play_game_again_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF0000"
+        android:padding="15dp"
+        android:text="Play Game Again ..!!"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
